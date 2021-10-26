@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>To Do List</title>
 </head>
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </div>
+            </div>
+        </nav>
+    </div>
+
 <body>
-    
+
+    <div id="infoText">
+        <h1>The 2-DO App!</h1>
+    </div>
+
+    <div id="toDoInputField">
+
+            <input type="text" id="userInput" placeholder="Enter your To-Do list item...">
+            <input type="button" value="Add To-Do" id="to-do-button" onclick="showTaskInput();"><br>
+
+
+    </div>
+
+    <div id="toDoItems">
+        <form id="newToDoLine">
+        <button type="button" id="deleteTaskBtn" onclick="deleteTaskButton();">
+        </button>
+
+        </form>
+        
+    </div>
+
+
+
 </body>
+
 </html>
