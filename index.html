@@ -27,26 +27,27 @@
     </div>
 
 <body>
-
+    <!--Header of 2-DO App-->
     <div id="infoText">
         <h1>The 2-DO App!</h1>
     </div>
 
+    <!--Input field where user will type the to do list item-->
     <div id="toDoInputField">
-
             <input type="text" id="userInput" placeholder="Enter your To-Do list item...">
-            <input type="button" value="Add To-Do" id="to-do-button" onclick="showTaskInput();"><br>
-
-
+            <input type="button" value="Add 2-DO" id="to-do-button" onclick="showTaskInput();"><br>
     </div>
 
+    <!--List of to do items created by the user-->
     <div id="toDoItems">
         <form id="newToDoLine">
-        <button type="button" id="deleteTaskBtn" onclick="deleteTaskButton();">
-        </button>
-
+            <input type="image" src="./deleteButtonX.png" alt="redXDeleteButton" id="deleteTaskBtn" onclick="deleteTaskButton()">
+            <input type="image" src="./green-checkmark-png.png" alt="greenCheckMark" id="checkTaskBtn" onclick="checkTaskButton()">
         </form>
-        
+
+        <!--Checkbox for to do item completion with strikethrough-->
+    
+
     </div>
 
 
