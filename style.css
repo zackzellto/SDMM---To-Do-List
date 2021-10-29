@@ -1,17 +1,12 @@
 body{
-    background: fixed;
     background-color: lightgray;
-    margin: auto;
     font-family: 'Fredoka One', cursive;
-    background-image: url(notepad-vector-png.png);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: 50.5% 110%;
 }
 
 h1{
     color: red;
 }
+
 
 #infoText{
     color: black;
@@ -21,11 +16,11 @@ h1{
 
 }
 
-#toDoInputField{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2%;
+.toDoInputField{
+    width: 40%;
+    display: block;
     margin-left: auto;
+    margin-right: 20.9%;
 }
 
 #to-do-button{
@@ -34,11 +29,10 @@ h1{
 
 #userInput{
     width: 40%;
-    margin-left: 27%;
     height: 2rem;
 }
 
-#newToDoLine{
+ul{
     text-align: center;
     word-spacing: normal;
     margin-top: 2rem;
