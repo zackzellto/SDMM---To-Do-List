@@ -28,6 +28,9 @@
 
 
 <body>
+    <div>
+        <img src="./iPad-ToDoBackground.png" class="ipad-background" alt="ipad-background">
+    </div>
 
     <!--Header of 2-DO App-->
     <div id="infoText">
@@ -40,15 +43,20 @@
             <input type="submit" value="Add 2-DO" id="to-do-button" onclick="showTaskInput()"><br>
     </div>
 
-    <!--List of to do items created by the user-->
+    <!--Clear all tasks button-->
+    <div id="clear-task-button">
+        <input type="submit" value="Clear Tasks" id="clear-to-do-list">
+    </div>
 
+        <!--List of to do items created by the user-->
+        <div class="ul-container">
         <ul id="newToDoLine"></ul>
+        </div>
 
-           <!--<input type="image" src="./deleteButtonX.png" alt="redXDeleteButton" id="deleteTaskBtn" onclick="deleteTaskButton()">
-            <input type="image" src="./green-checkmark-png.png" alt="greenCheckMark" id="checkTaskBtn" onclick="checkTaskButton()">-->
+
 
         <!--Checkbox for to do item completion with strikethrough-->
-
 </body>
+
 
 </html>

@@ -1,9 +1,12 @@
 body{
+
     background-color: lightgray;
     font-family: 'Fredoka One', cursive;
 }
 
 h1{
+    text-align: center;
+    size: 40px;
     color: red;
 }
 
@@ -11,16 +14,26 @@ h1{
 #infoText{
     color: black;
     text-align: center;
+    size: 25px;
     margin-top: 5rem;
     font-weight: 300;
 
+}
+
+.ipad-background{
+    background-position: center;
+    z-index: -1;
+    width: 65%;
+    position:fixed;
+    margin-left: 18%;
 }
 
 .toDoInputField{
     width: 40%;
     display: block;
     margin-left: auto;
-    margin-right: 20.9%;
+    margin-right: 19.9%;
+    position: relative;
 }
 
 #to-do-button{
@@ -30,41 +43,50 @@ h1{
 #userInput{
     width: 40%;
     height: 2rem;
+
 }
 
 ul{
     text-align: center;
-    word-spacing: normal;
-    margin-top: 2rem;
-
+    word-spacing:normal;
+    position:relative;
+    right: 1rem;
 }
 
-#deleteTaskBtn{
-    
+#delete-btn{
     background-repeat: no-repeat;
     background-size: 100%;
+    background-image: url(./deleteButtonX.png);
     background-color: rgba(211, 211, 211, 0);
-    background-position: auto;
-    height: 25px;
-    width: 25px;
-    margin-left: 50%;
+    height: 20px;
+    width: 20px;
+    position:absolute;
+    left: 75rem;
     border: none;
     outline: none;
-    display: flexbox;
 }
 
-#checkTaskBtn{
-    
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgba(211, 211, 211, 0);
-    background-position: auto;
-    height: 25px;
-    width: 25px;
-    margin-left: 50%;
-    border: none;
-    outline: none;
-    display:list-item;
+.task-checkbox{
     text-decoration: line-through;
+    background-image: url(./green-checkmark-png.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(211, 211, 211, 0);
+    position:absolute;
+    right: 72rem;
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+}
+
+
+#clear-to-do-list{
+    width: 8%;
+    height: 30px;
+    background-color: red;
+    position:relative;
+    left: 30rem;
+    top: 38rem;
 }
 
