@@ -26,13 +26,9 @@ let input = document.getElementById('userInput');
 
 //clear all tasks from list w/ button click.
 
-const clearTaskButton = document.getElementById('clear-to-do-list');
-        createUL.appendChild(clearTaskButton);
-        clearTaskButton.addEventListener('click', () => clearTasks(clearTaskButton))
+const clearTaskButton = document.querySelector('#clear-to-do-list');
+clearTaskButton.addEventListener('click', () => deleteToDo(deleteButton));
 
-function clearTasks(e){
-    e.document.getElementById("newToDoLine").appendChild(createUL).value = '';
-}
 
 //A user can delete an existing todo  (for todos that have been marked as completed)
 function deleteToDo(e) {
