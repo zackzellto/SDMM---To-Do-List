@@ -13,6 +13,7 @@ function showTaskInput(){
         createUL.appendChild(deleteButton);
         deleteButton.addEventListener('click', () => deleteToDo(deleteButton));
         checkboxButton.setAttribute("class", "task-checkbox");
+        checkboxButton.addEventListener("click", (e) => checkboxToDo(e));
         createUL.appendChild(checkboxButton);
 }
 
@@ -27,7 +28,10 @@ let input = document.getElementById('userInput');
 //clear all tasks from list w/ button click.
 
 const clearTaskButton = document.querySelector('#clear-to-do-list');
-clearTaskButton.addEventListener('click', () => deleteToDo(deleteButton));
+clearTaskButton.addEventListener('click', () => {
+    const toDoList = document.querySelector("#newToDoLine");
+    toDoList.textContent = "";
+});
 
 
 //A user can delete an existing todo  (for todos that have been marked as completed)
@@ -37,7 +41,7 @@ function deleteToDo(e) {
 
 //When a todo item is marked as completed the text of the todo should ce crossed out (using strikethrough font)
 
-
-
-
+function checkboxToDo(e) {
+    e.target.parentElement.classList.toggle("checked");
+}
 

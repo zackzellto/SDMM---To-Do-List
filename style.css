@@ -67,7 +67,6 @@ ul{
 }
 
 .task-checkbox{
-    text-decoration: line-through;
     background-image: url(./green-checkmark-png.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -80,6 +79,11 @@ ul{
     outline: none;
 }
 
+.checked{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
 
 #clear-to-do-list{
     width: 8%;
